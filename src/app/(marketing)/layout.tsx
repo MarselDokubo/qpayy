@@ -1,5 +1,12 @@
-import { ReactNode } from "react"
-import { NavBar } from "./_components/NavBar"
+import { ReactNode } from "react";
+import { NavBar } from "./_components/NavBar";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "QPayy - Price Smarter, Sell Bigger",
+  description: "",
+};
 
 export default function MarketingLayout({ children }: { children: ReactNode }) {
   return (
@@ -7,5 +14,5 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
       <NavBar />
       {children}
     </div>
-  )
+  );
 }
