@@ -23,7 +23,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <>
-      <section className="gap-8 px-4 mt-48 md:mt-52 relative">
+      <section className="gap-8 px-4 mt-40 md:mt-52 relative">
         <div className="offer max-w-max mx-auto my-4 rounded-full border border-black/10 shadow p-[2px] backdrop-blur text-sm md:text-base">
           <span className="mx-2 inline-flex items-center">
             Enjoy 50% discount on first purchase
