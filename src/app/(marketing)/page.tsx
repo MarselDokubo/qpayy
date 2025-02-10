@@ -32,7 +32,7 @@ export default function HomePage() {
             Try Now
           </span>
         </div>
-        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tight max-w-max mx-auto">
+        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tight max-w-max mx-auto text-center">
           Price Smart, Sell Big!
         </h1>
         <p className="md:text-lg lg:text-2xl max-w-3xl mx-auto text-center my-4">
