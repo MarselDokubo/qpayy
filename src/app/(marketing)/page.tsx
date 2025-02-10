@@ -24,7 +24,7 @@ export default function HomePage() {
   return (
     <>
       <section className="gap-8 px-4 mt-48 md:mt-52 relative">
-        <div className="offer max-w-max mx-auto my-4 rounded-full border border-black/10 shadow p-[2px] backdrop-blur">
+        <div className="offer max-w-max mx-auto my-4 rounded-full border border-black/10 shadow p-[2px] backdrop-blur text-sm md:text-base">
           <span className="mx-2 inline-flex items-center">
             Enjoy 50% discount on first purchase
           </span>
@@ -32,14 +32,21 @@ export default function HomePage() {
             Try Now
           </span>
         </div>
-        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tight max-w-max mx-auto text-center">
-          Price Smart, Sell Big!
+        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tight max-w-max mx-auto text-center flex flex-col md:flex-row">
+          <span>
+            Price Smart, 
+          </span>
+          <span> 
+           Sell Big!
+          </span>
         </h1>
-        <p className="md:text-lg lg:text-2xl max-w-3xl mx-auto text-center my-4">
+        <p className="md:text-lg lg:text-2xl max-w-sm md:max-w-3xl mx-auto text-center my-4">
           <span className="hidden md:inline-block">
             Optimize your product pricing across countries to maximize sales.
           </span>
-          Capture 85% of the untapped market with location-based pricing
+          <span>
+            Capture 85% of the untapped market with location-based pricing
+          </span>
         </p>
         <span className="flex flex-col items-center justify-center gap-4 my-8">
           <SignUpButton>
