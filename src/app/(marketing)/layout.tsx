@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function MarketingLayout({ children }: { children: ReactNode }) {
   return (
     <div className="selection:bg-[hsl(320,65%,52%,20%)]">
+      <div className="bgc-1 h-screen w-screen absolute inset-0"></div>
       <NavBar />
       {children}
     </div>

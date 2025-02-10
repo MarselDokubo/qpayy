@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function NavBar() {
   return (
-    <header className="flex py-8 fixed top-0 w-full z-10 bg-background/95">
+    <header className="flex py-6 fixed top-0 w-full z-10 bg-background/95 backdrop-blur">
       <nav className="flex items-center gap-10 px-5 md:px-20 justify-between w-full">
         <Link href="/" className="font-semibold">
           <BrandLogo />

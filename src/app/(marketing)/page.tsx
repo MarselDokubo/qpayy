@@ -23,37 +23,47 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <>
-      <section className="min-h-screen flex items-center md:justify-center text-center text-balance flex-col gap-8 px-4 mt-48 md:mt-56 relative -z-10">
-        <div className="offer  max-w-max rounded-full border-2 border-neutral-400/10 p-2 md:px-4 backdrop-blur">
-          Enjoy 50% discount on first purchase!
+      <section className="gap-8 px-4 mt-48 md:mt-52 relative">
+        <div className="offer max-w-max mx-auto my-4 rounded-full border border-black/10 shadow p-[2px] backdrop-blur">
+          <span className="mx-2 inline-flex items-center">
+            Enjoy 50% discount on first purchase
+          </span>
+          <span className="py-[6px] px-2 bg-black text-white rounded-full inline-flex items-center justify-center">
+            Try Now
+          </span>
         </div>
-        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tight">
-          Price Smarter, Sell bigger!
+        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tight max-w-max mx-auto">
+          Price Smart, Sell Big!
         </h1>
-        <p className="md:text-lg lg:text-2xl max-w-5xl -mt-2">
+        <p className="md:text-lg lg:text-2xl max-w-3xl mx-auto text-center my-4">
           <span className="hidden md:inline-block">
             Optimize your product pricing across countries to maximize sales.
           </span>
           Capture 85% of the untapped market with location-based pricing
         </p>
-        <SignUpButton>
-          <Button className="text-lg p-6 rounded-xl flex gap-2">
-            Get started for free <ArrowRightIcon className="size-5" />
-          </Button>
-        </SignUpButton>
-        <p>14-day free trial</p>
-        <div className="img-container relative top-10 shadow-2xl w-[971px] h-[605px] hidden md:block">
+        <span className="flex flex-col items-center justify-center gap-4 my-8">
+          <SignUpButton>
+            <Button className="text-lg p-6 rounded-xl flex gap-2">
+              Get started for free <ArrowRightIcon className="size-5" />
+            </Button>
+          </SignUpButton>
+          <a href="" className="text-lg text-black/60 block">
+            14-day free trial
+          </a>
+        </span>
+
+        <div className="hero--image flex justify-center relative mt-16">
           <Image
             src={quickPayyDashboard}
-            alt=""
-            className="absolute rounded-2xl top-0 left-0 object-cover z-10"
-          ></Image>
-          <div className="absolute bg-[linear-gradient(#d2dfff,hsl(var(--background))_60%)] w-[108%] h-[120%] -left-[2.5rem] -top-10 rounded-3xl "></div>
+            alt="dashboard image"
+            className="rounded-2xl shadow-md"
+          />
+          <div className="gradient bg-linear-to-l from-violet-500 to-fuchsia-500"></div>
         </div>
       </section>
-      <section className="bg-primary text-primary-foreground">
+      <section className="mt-16">
         <div className="container py-16 flex flex-col gap-16 px-8 md:px-16">
-          <h2 className="text-3xl text-center text-balance">
+          <h2 className="text-2xl text-center text-balance">
             Trusted by the top modern companies
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-16">
